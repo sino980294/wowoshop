@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>WOWOROOM</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WOWOROOM</h1>
+        <ul class="index">
+            <li><a href="#advantage">床墊優勢</a></li>
+            <li><a href="#compare">家具比較</a></li>
+            <li><a href="#deliver">運送方式</a></li>
+            <li><a href="">立即預訂</a></li>
+        </ul> 
+    </header>
+    <div class="banner"><h2>窩窩家具</br>跟您一起品味生活</h2></div>
+    <div class="advantage" id="advantage">
+        <h3>床墊優勢</h3>
+        <ul class="advantage-list">
+            <li>
+                <img src="css/img/recycle.png" alt="原木料環保">
+                <p>原木料環保</p>
+            </li>
+            <li>
+                <img src="css/img/storage.png" alt="好收納">
+                <p>好收納</p>
+            </li>
+            <li>
+                <img src="css/img/assembly.png" alt="好組裝">
+                <p>好組裝</p>
+            </li>
+        </ul>
+    </div>
+<div class="compare" id="compare">
+    <h3>家具比較</h3>
+    <table class="compare-table">
+        <tr>
+            <th></th>
+            <th>窩窩系統模組家具</th>
+            <th>組合式家具</th>
+            <th>實木家具</th>
+        </tr>
+        <tr>
+            <th class="ta-left">可單人自行組裝</th>
+            <td><span class="material-icons">done</span></td>
+            <td>不一定</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="ta-left">可多次重複拆裝</th>
+            <td><span class="material-icons">done</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="ta-left">床墊規格彈性大</th>
+            <td><span class="material-icons">done</span></td>
+            <td>不一定</td>
+            <td>不一定</td>
+        </tr>
+        <tr>
+            <th class="ta-left">材質可長久使用</th>
+            <td><span class="material-icons">done</span></td>
+            <td></td>
+            <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+            <th class="ta-left">小客車即可搬運</th>
+            <td><span class="material-icons">done</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div class="deliver" id="deliver">
+    <h3>運送方式</h3>
+    <ul class="deliver-step">
+        <li>
+            <div class="deliver-step-card">
+            <span class="material-icons">
+                shopping_cart
+            </span>
+            </div>
+            <h4>STEP.1</h4>
+            <p>選購商品</p>
+        </li>
+        <li>
+            <div class="deliver-step-card">
+            <span class="material-icons">
+                format_list_bulleted
+            </span>
+            </div>
+            <h4>STEP.2</h4>
+            <p>填寫預定資料</p>
+        </li>
+        <li>            
+            <div class="deliver-step-card">
+            <span class="material-icons">
+                local_post_office
+            </span>
+            </div>
+            <h4>STEP.3</h4>
+            <p>預定成功</p>
+        </li>
+        <li>
+            <div class="deliver-step-card">
+            <span class="material-icons">
+                done
+            </span>
+            </div>
+            <h4>STEP.4</h4>
+            <p>Email 付款資訊</p>
+        </li> 
+    </ul>   
+</div>
+<div class="product">
+    <select class="product-select">        
+    </select>
+    <ul class="product-list">
+    </ul>
+</div>
+<div class="mycart">
+    <h3>我的購物車</h3>
+    <table class="mycart-table">
+    </table>
+</div>
+<div class="order">
+    <h3>填寫預訂資料</h3>
+    <form action="" class="order-form">
+        <div class="order-form-group">
+            <label for="customerName" class="order-label">姓名</label>
+            <div>
+                <input type="text" class="order-input" id="customerName" placeholder="請輸入姓名" name="姓名">
+                <p class="order-message" data-message="姓名">必填</p>
+            </div>
+        </div>
+        <div class="order-form-group">
+            <label for="customerPhone" class="order-label">電話</label>
+            <div>
+                <input type="tel" class="order-input" id="customerPhone" placeholder="請輸入電話" name="電話">
+                <p class="order-message" data-message="電話">必填</p>
+            </div>
+        </div>
+        <div class="order-form-group">
+            <label for="customerEmail" class="order-label">Email</label>
+            <div>
+                <input type="email" class="order-input" id="customerEmail" placeholder="請輸入 Email" name="Email">
+                <p class="order-message" data-message="Email">必填</p>
+            </div>
+        </div>
+        <div class="order-form-group">
+            <label for="customerAddress" class="order-label">寄送地址</label>
+            <div>
+                <input type="text" class="order-input" id="customerAddress" placeholder="請輸入寄送地址" name="寄送地址">
+                <p class="order-message" data-message="寄送地址">必填</p>
+            </div>
+        </div>
+        <div class="order-form-group">
+            <label for="tradeWay" class="order-label">交易方式</label>
+            <div>
+                <select id="tradeWay" class="order-input" name="交易方式">
+                    <option value="ATM" selected>ATM</option>
+                    <option value="信用卡">信用卡</option>
+                    <option value="超商付款">超商付款</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="送出預訂資料" class="order-send-btn">
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
